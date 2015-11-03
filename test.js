@@ -6,7 +6,7 @@ var superagent = require("superagent"),
 describe("Index", function () {
   it("renders HTML", function (done) {
     superagent.get("http://localhost:4000/")
-      .end(function (e, res) {
+      .end(function (e, res) { 
         (e === null).should.equal(true);
         res.text.should.equal("Hey buddy!");
         done();
